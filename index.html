@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support &mdash; Chameleon Jumper</title>
+<style>
+  :root {
+    --bg: #fdfaf6;
+    --card: #ffffff;
+    --ink: #22201d;
+    --muted: #5f5b55;
+    --rule: #e7e1d8;
+    --accent: #2f9e6e;
+    --sky1: #ffb98a;
+    --sky2: #6a2c70;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16181a; --card: #1e2124; --ink: #ecebe8;
+      --muted: #a6a39d; --rule: #30343a; --accent: #4ec08b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 0 72px; }
+
+  .hero {
+    background: linear-gradient(170deg, var(--sky1) 0%, #ff8f5e 45%, var(--sky2) 100%);
+    border-radius: 18px; padding: 34px 26px; color: #fff; margin-bottom: 38px;
+  }
+  .hero p.kicker { margin: 0 0 8px; font-size: 13px; letter-spacing: .09em; text-transform: uppercase; opacity: .9; font-weight: 700; }
+  .hero h1 { margin: 0 0 8px; font-size: clamp(28px, 7vw, 40px); line-height: 1.15; letter-spacing: -0.015em; }
+  .hero p.sub { margin: 0; font-size: 17px; opacity: .95; }
+
+  h2 { font-size: 20px; margin: 34px 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); }
+
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+    padding: 20px 22px; margin: 24px 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .mail { font-size: 19px; font-weight: 600; }
+
+  details {
+    border-bottom: 1px solid var(--rule); padding: 14px 0;
+  }
+  details summary {
+    cursor: pointer; font-weight: 600; list-style: none; position: relative; padding-right: 26px;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::after {
+    content: "+"; position: absolute; right: 2px; top: -2px; font-size: 22px; color: var(--muted); font-weight: 400;
+  }
+  details[open] summary::after { content: "\2013"; }
+  details p { margin: 10px 0 2px; color: var(--muted); }
+
+  footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <p class="kicker">MR Games</p>
+    <h1>Chameleon Jumper Support</h1>
+    <p class="sub">Tap to jump. Snap mosquitoes. Don't hit the leaves.</p>
+  </div>
+
+  <h2>Get in touch</h2>
+  <div class="card">
+    <p>Something broken, a purchase that did not arrive, or just an idea for the game? Write to us and we will answer.</p>
+    <p class="mail"><a href="mailto:mmr_games@outlook.com">mmr_games@outlook.com</a></p>
+  </div>
+  <p>If you are reporting a problem, it helps a lot to include your phone model, whether you are on iPhone or Android, and what you were doing when it happened.</p>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>I paid but did not get my mosquitoes</summary>
+    <p>Open the store in the game and tap <strong>Restore Purchases</strong>. If that does not bring them back within a few minutes, email us with the receipt from Apple or Google and we will sort it out.</p>
+  </details>
+
+  <details>
+    <summary>I removed ads but they came back</summary>
+    <p>"Remove Ads" follows your App Store or Google Play account, not the phone. On a new device, open the store in the game and tap <strong>Restore Purchases</strong> while signed in to the same account you bought it with.</p>
+  </details>
+
+  <details>
+    <summary>Can I change my username?</summary>
+    <p>The username is chosen once and kept, so that rewards stay tied to the right player. If you need it changed, email us and explain why.</p>
+  </details>
+
+  <details>
+    <summary>The daily reward says I have to wait</summary>
+    <p>The reward unlocks on real-world time, checked against a public time server, so changing the clock on your phone will not open it early. If you have no internet connection the game cannot check the date, and the reward waits until you are back online.</p>
+  </details>
+
+  <details>
+    <summary>How do I delete my data?</summary>
+    <p>Everything the game saves &mdash; username, score, items, mosquito balance &mdash; lives only on your own device. Deleting the app removes all of it. We hold nothing about you on our side.</p>
+  </details>
+
+  <details>
+    <summary>Is it safe for kids?</summary>
+    <p>Yes. There is no chat, no social features and no way to contact other players. The game does contain ads and optional purchases, so you may want to turn on purchase approval in your phone's family settings.</p>
+  </details>
+
+  <h2>Privacy</h2>
+  <p>We do not run a server and we never receive your personal information. The full details are on the <a href="privacy.html">privacy policy</a> page.</p>
+
+  <footer>
+    MR Games &middot; Chameleon Jumper &middot; <a href="privacy.html">Privacy policy</a>
+  </footer>
+
+</div>
+</body>
+</html>
